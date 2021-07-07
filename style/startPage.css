@@ -1,0 +1,64 @@
+body {
+  background-color: #e5eafe;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#login-msg {
+  margin-left: 250px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-top: 120px;
+  line-height: 100px;
+}
+
+#login-msg1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-div {
+  margin-left: 80px;
+}
+
+.btn-div button {
+  width: 400px;
+  height: 75px;
+  font-size: 2rem;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  background: deepskyblue;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 1280px) {
+  .container {
+    flex-direction: column;
+  }
+  #login-msg {
+    display: none;
+  }
+
+  #login-msg1 {
+    opacity: 1;
+    visibility: visible;
+    font-size: 2rem;
+    margin-left: 80px;
+    text-align: center;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 930px) {
+  .btn-div button {
+    margin-bottom: 20px;
+  }
+}
